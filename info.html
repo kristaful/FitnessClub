@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Author: Krista Alexander
+      Date: June 27 2021
+      Assignment: Fit for Fun Fitness Club
+      File Name: info.html -->
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/cb0a3be9df.js" crossorigin="anonymous"></script>
+  <title>Info</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="info">
+  <header>
+    <nav>
+      <ul>
+        <li><a class="#home" href="index.html">Home</a></li>
+        <li><a class="#classes" href="classes.html">Class Schedule</a></li>
+        <li><a class="#info" href="info.html">Class Info & Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <article class="descriptions">
+    <h1 class="descriptions">Class Descriptions</h1>
+    <dl>
+      <dt>Cross Training</dt>
+      <dd>A great way to give your workouts variety! A fun mix of strength training, HIIT, and barre techniques.</dd>
+
+      <dt>Sprint</dt>
+      <dd>Fast and Seriously Fun! Squeeze in 30 minutes of this aerobic class and get energized for your day.</dd>
+
+      <dt>Spin</dt>
+      <dd>Bring your water bottles and a thick towel, you're gonna sweat it out in this spin class. Great tunes and the latest spin bikes. Sign up now, these seats go quick!</dd>
+
+      <dt>BodyPump</dt>
+      <dd>High energy, lots of fun! This class is designed to get your heart pumping and your body on the move with a balanced mix of strength training and aerobics.</dd>
+
+      <dt>BodyCombat</dt>
+      <dd>Get ready to burn it up! Military style training with a heavy additon of music and spirit.</dd>
+
+      <dt>Step Interval</dt>
+      <dd>Not your average step class. Join us for a blend of step aerobics and dance training.</dd>
+
+      <dt>Advanced Cross Training</dt>
+      <dd>For those who want to take it to the next level. This advanced class mixes various forms of exercises, which change on a monthly basis, designed for athletes.</dd>
+
+      <dt>MixxedFIT</dt>
+      <dd>A high intensity ciruict style strength and aerobic blend for all.</dd>
+
+      <dt>Zumba</dt>
+      <dd>Get in here and dance! Our certified Zumba instructor knows how to get you grooving to the music. This class is designed for everyone.</dd>
+    </dl>
+    <h2 class="descriptions">Fill out the form below to register for classes!</h2>
+  </article>
+
+  <!--Create register form-->
+
+  <div class="container">
+    <form method="get" action="thankyou.html">
+      <fieldset>
+        <legend>Contact Information</legend>
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" id="fname" required placeholder="First Name"/>
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" id="lname" required placeholder="Last Name"/>
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" placeholder="youremail@yourhost.com"/>
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone" placeholder="Phone Number"/>
+          <label for="contact">Preferred Method of Contact</label>
+
+          <select id="contact" name="contact" required>
+          <option value="">-</option>
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+          <option value="owl">Owl</option>
+          <option value="text">Text</option></select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Desired Classes</legend>
+          <div>
+            <input type="checkbox" id="crosstraining" name="class1" value="CrossTraining">
+            <label for="crosstraining">Cross Training</label>
+            <input type="checkbox" id="sprint" name="class2" value="Sprint">
+            <label for="sprint">Sprint</label>
+            <input type="checkbox" id="spin" name="class3" value="Spin">
+            <label for="spin">Spin</label>
+            <input type="checkbox" id="bodypump" name="class4" value="BodyPump">
+            <label for="bodypump">Body Pump</label>
+            <input type="checkbox" id="bodycombat" name="class5" value="BodyCombat">
+            <label for="bodycombat">Body Combat</label>
+            <input type="checkbox" id="stepinterval" name="class6" value="StepInterval">
+            <label for="stepinterval">Step Interval</label><br>
+            <input type="checkbox" id="advancedcrosstraining" name="class7" value="AdvancedCrossTraining">
+            <label for="advancedcrosstraining">Advanced Cross Training</label>
+            <input type="checkbox" id="mixxedfit" name="class8" value="MixxedFIT">
+            <label for="mixxedfit">MixxedFIT</label>
+            <input type="checkbox" id="zumba" name="class9" value="Zumba">
+            <label for="zumba">Zumba</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferred Time of Day for Classes</legend>
+            <input type="radio" id="am" name="am pm" value="AM" required>
+            <label for="am">AM</label>
+            <input type="radio" id="pm" name="am pm" value="PM">
+            <label for="pm">PM</label>
+        </fieldset>
+
+      <textarea id="addinfo" name="addinfo" placeholder="Additional Info..." style="height:100px"></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+
+  <footer>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+    <p>Fit for Fun Fitness Club &copy; June 2021</p>
+  </footer>
+
+</body>
+</html>

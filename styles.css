@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+/*--Author: Krista Alexander
+    Date: June 27 2021
+    Assignment: Fit for Fun Fitness Club
+    File Name: styles.css
+*/
+
+/* Style main body and margins */
+
+* {
+  margin: 0;
+  box-sizing:border-box;
+}
+
+html {
+  font-family: Verdana, sans-serif;
+}
+
+/* Style class descriptions */
+
+article, dl {
+  display: block;
+  background-color: rgba(249, 249, 246, 0.32);
+  padding-top: 3%;
+
+  margin-bottom: 3%;
+}
+
+dt {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-variant-caps: petite-caps;
+  padding-top: 10px;
+}
+
+dd {
+  margin: 0 0 0 40px;
+  font-weight: lighter;
+  padding-top: 3px;
+}
+
+/* Create different background images per page */
+
+body#homepage {
+  background-image: url(homepage.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: darkgrey;
+}
+
+body#classes {
+  background-image: url(classes.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: darkgrey;
+  background-blend-mode: soft-light;
+}
+
+body#info {
+  background-image: url(info.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: darkgrey;
+  background-blend-mode: soft-light;
+}
+
+body#request {
+  background-image: url(request.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: darkgrey;
+  background-blend-mode: soft-light;
+}
+
+/* Style class schedule table */
+
+table {
+  margin:auto;
+}
+
+table, th, td {
+  border: darkgrey solid;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(249, 249, 246, 0.32);
+}
+
+/* Style Nav List */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Style links */
+
+li a:link {
+  color: white;
+}
+
+ li a:hover {
+  background-color: hotpink;
+}
+
+/* Style different headers */
+
+h1 {
+  font-size: 50px;
+  font-stretch: expanded;
+  font-variant: small-caps;
+}
+
+h1.descriptions {
+  text-decoration: underline;
+}
+
+h2.descriptions {
+  text-align: center;
+}
+
+/* Style sign-up form */
+
+input[type=text], input[type=email], input[type=input], select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: hotpink;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #111;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  opacity: .70;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+/* create Responsive layout for resizing */
+@media screen and (max-width: 600px) {
+   input[type=submit]{
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* style social media icons */
+
+.fab {
+  position: relative;
+  font-size: 2em;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+/* Footer styles */
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
